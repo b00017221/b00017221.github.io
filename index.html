@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>TotE2020</title>
     <link rel="shortcut icon" href="icons/cube.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header>        
@@ -18,7 +19,7 @@
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="#games" class="menu_link">Расписание игр</a></li>
-                    <li class="menu_item"><a href="#require" class="menu_link">Результаты</a></li>
+                    <li class="menu_item"><a href="#result" class="menu_link">Результаты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Правила розыгрыша</a></li> 
                 </ul>
             </div>
@@ -206,6 +207,7 @@
         </div>  
      </div>
  </section>
+
  <section class="header-2"id="games">
      <div class="container">
         <div class="head-h2">
@@ -213,6 +215,7 @@
         </div>
      </div>
  </section>
+
  <section class="games" >
      <div class="container">
         <div class="row group-a-bgc match1">
@@ -223,7 +226,7 @@
              <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                 <span>Турция</span>
-                <img src="icons/TUR.png" alt="tur" class="flag">                     
+                <img src="icons/TUR.png" alt="tur" class="flag">
             </div>
             <div class="blank col-1">--</div>
             <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
@@ -236,7 +239,14 @@
             <div class="btns col-1">
                 <button type="button" class="btn btn-outline-light">Прогноз</button>
             </div>
-         </div>
+            <form action="#" class="col-12 scoreform">
+                <span>Введите счет</span>
+                <input name="score1" required type="number">
+                <span>:</span>
+                <input name="score2" required type="number">
+                <button type="button" class="btn btn-outline-light">Подтвердить</button>
+            </form>
+         </div> 
 
          <div class="row group-a-bgc match2">
             <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
@@ -445,64 +455,402 @@
             </div>  
          </div>
 
-         <div class="row group-f-bgc">
- 
+         <div class="row group-f-bgc match11">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>16/06/2020</span>
+                <span>Пушкаш Арена - Будапешт</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">19:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Победитель A(D)</span>
+                <img src="icons/none.png" alt="none" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/POR.png" alt="por" class="flag">
+                <span>Португалия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>   
          </div>
 
-         <div class="row group-f-bgc">
- 
+         <div class="row group-f-bgc match12">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>16/06/2020</span>
+                <span>Арена Мюнхен - Мюнхен</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Франция</span>
+                <img src="icons/FRA.png" alt="fra" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/GER.png" alt="ger" class="flag">
+                <span>Германия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>   
          </div>
 
-         <div class="row group-a-bgc">
- 
+         <div class="row group-a-bgc match13">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>17/06/2020</span>
+                <span>С.Петербург - С.Петербург</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">16:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Финляндия</span>
+                <img src="icons/FIN.png" alt="fin" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/RUS.png" alt="rus" class="flag">
+                <span>Россия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>  
         </div>
 
-        <div class="row group-a-bgc">
-
+        <div class="row group-a-bgc match14">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>17/06/2020</span>
+                <span>Олимпийский - Баку</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">19:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Турция</span>
+                <img src="icons/TUR.png" alt="tur" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/WAL.png" alt="wal" class="flag">
+                <span>Уэльс</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>
          </div>
 
-         <div class="row group-b-bgc">
-
+         <div class="row group-b-bgc match15">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>17/06/2020</span>
+                <span>Олимпикo - Рим</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Италия</span>
+                <img src="icons/ITA.png" alt="ita" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/SUI.png" alt="sui" class="flag">
+                <span>Швейцария</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>
          </div>
 
-         <div class="row group-c-bgc">
-
+         <div class="row group-c-bgc match16">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>18/06/2020</span>
+                <span>Арена Националэ - Бухарест</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">16:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Украина</span>
+                <img src="icons/UKR.png" alt="ukr" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/none.png" alt="none" class="flag">
+                <span>Победитель С</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>
          </div>
 
-         <div class="row group-b-bgc">
- 
+         <div class="row group-b-bgc match17">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>18/06/2020</span>
+                <span>Паркен Арена - Копенгаген</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">19:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Дания</span>
+                <img src="icons/DEN.png" alt="den" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/BEL.png" alt="bel" class="flag">
+                <span>Бельгия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div> 
          </div>
 
-         <div class="row group-c-bgc">
- 
+         <div class="row group-c-bgc match18">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>18/06/2020</span>
+                <span>Й.Кройфф Арена - Амстердам</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Нидерланды</span>
+                <img src="icons/NED.png" alt="ned" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/AUT.png" alt="aut" class="flag">
+                <span>Австрия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>  
          </div>
 
-         <div class="row group-e-bgc">
-
+         <div class="row group-e-bgc match19">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>19/06/2020</span>
+                <span>Дублин Арена - Дублин</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">16:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Швеция</span>
+                <img src="icons/SWE.png" alt="swe" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/none.png" alt="none" class="flag">
+                <span>Победитель B</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div> 
          </div>
 
-         <div class="row group-d-bgc">
- 
+         <div class="row group-d-bgc match20">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>19/06/2020</span>
+                <span>Хэмптден Парк - Глазго</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">19:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Хорватия</span>
+                <img src="icons/CRO.png" alt="cro" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/CZE.png" alt="cze" class="flag">
+                <span>Чехия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>  
          </div>
 
-         <div class="row group-d-bgc">
- 
+         <div class="row group-d-bgc match21">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>19/06/2020</span>
+                <span>Уэмли - Лондон</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Англия</span>
+                <img src="icons/ENG.png" alt="eng" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/none.png" alt="none" class="flag">
+                <span>Победитель С</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>  
          </div>
 
-         <div class="row group-f-bgc">
- 
+         <div class="row group-f-bgc match22">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>20/06/2020</span>
+                <span>Пушкаш Арена - Будапешт</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">16:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Победитель A(D)</span>
+                <img src="icons/none.png" alt="none" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/FRA.png" alt="fra" class="flag">
+                <span>Франция</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>   
          </div>
 
-         <div class="row group-f-bgc">
-
+         <div class="row group-f-bgc match23">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>20/06/2020</span>
+                <span>Арена Мюнхен - Мюнхен</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">19:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Португалия</span>
+                <img src="icons/POR.png" alt="por" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/GER.png" alt="ger" class="flag">
+                <span>Германия</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>   
          </div>
 
-         <div class="row group-e-bgc">
+         <div class="row group-e-bgc match24">
+            <div class="placegame col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2">
+                <span>20/06/2020</span>
+                <span>Сан-Мамес - Бильбао</span>
+             </div>
+             <div class="timegame col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1">22:00</div>
+             <div class="team1 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <span>Испания</span>
+                <img src="icons/ESP.png" alt="esp" class="flag">                     
+            </div>
+            <div class="blank col-1">--</div>
+            <div class="team2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <img src="icons/POL.png" alt="pol" class="flag">
+                <span>Польша</span>
+            </div>
+            <div class="score1 col-1">???</div>
+            <div class="blank col-1">:</div>
+            <div class="score2 col-1">???</div>
+            <div class="btns col-1">
+                <button type="button" class="btn btn-outline-light">Прогноз</button>
+            </div>
  
          </div>
 
          
 
+     </div>
+ </section>
+
+ <section class="header-2" id="result">
+     <div class="container">
+         <div class="head-h2">
+             <h2>Результаты розыгрыша</h2>
+         </div>
+     </div>
+ </section>
+
+ <section class="players">
+    <div class="container">             
+        <div class="row players_head">
+            <div class="col-7"></div>
+            <div class="col-1">И</div>
+            <div class="col-1">ОИ</div>
+            <div class="col-1">ОР</div>
+            <div class="col-2">Итог</div>            
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-1</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>            
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-2</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>   
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-3</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>   
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-4</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>   
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-5</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>   
+         </div>
+         <div class="row">
+            <div class="col-7"><a href="#" class="player"> Игрок-6</a></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2"></div>   
+         </div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
+         <div class="row"></div>
      </div>
  </section>
  <script src="js/script.js"></script>
