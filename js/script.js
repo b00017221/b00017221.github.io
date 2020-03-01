@@ -137,7 +137,7 @@ for (let game in allGames) {
     let numMatch = parseInt(game.replace(/[^0-9\.]/g, ''), 10);
     for ( let player in allPlayers) {
         forecastPlayer = player;
-        console.log(forecastPlayer);
+        //console.log(forecastPlayer);
         for (let iPlay in allPlayers[player]) {
             bonus = '';
             if (iPlay=='name') namePlayer = allPlayers[player][iPlay];
