@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 // объект КОМАНДЫ
 let teams = {
     1:['a','Турция','icons/TUR.png'],
