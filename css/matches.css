@@ -1,0 +1,156 @@
+﻿.matches {
+    font-weight: 300;
+    min-height: 800px;
+    background: url('../img/football4.jpg') center center/cover no-repeat;   
+    padding-bottom: 10px;   
+    font-size: 16px;
+}
+    .matches img {
+        width: 24px;
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+    .matches-row {
+        display: flex;
+        flex-wrap: wrap;
+        color: #FAFAD2;
+        padding: 5px 0;
+        justify-content:space-around;
+    }
+        .group-match {
+            border: solid 2px;
+            border-radius: 50%;
+            font-weight: 700;
+            color: white;
+            width: 24px;
+            height:24px;
+            text-align: center;
+            vertical-align: 6px;
+        }
+        .dpt-match {
+            display: flex;
+        }
+            .dpt-match span {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        .teams-match {
+            display: flex;
+            margin: 0 auto;
+        }
+            .team-home {
+                text-align: right;
+                display: flex;
+            }
+            .blank {
+                margin: 0 10px;
+            }
+            .team-guest {
+                text-align: left;
+                display: flex;
+            }
+        .score-match span {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .btn-matches {
+            //display: none
+            height: 24px;
+            border: 2px solid;
+            border-radius: 5px;
+            line-height: 18px;
+            text-align: center;
+        }
+        .btn-matches:hover {
+            background-color: #F0FFFF;
+            color: rgb(47,79,79);
+            cursor: pointer;    
+        }
+    .forecast-match-row {
+        display: none;
+        flex-wrap: wrap;
+        background-color: #F0FFFF;
+        color: #000080;
+        line-height: 20px;
+        position: relative;
+        border: 3px solid;
+    }
+        .point {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            border-left: 2px dashed;
+            border-color: #66CDAA;
+        }
+        .close-forecast {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            left: 98%;
+        }
+            .close-forecast span {
+                display: block;
+                height: 2.5px;
+                width: 60%;
+                background-color: #000080;
+                margin: 0 auto;
+            }
+            .close-forecast span:nth-child(1) {
+                transform: translateY(8.5px) rotate(-45deg);
+                //transform: translateY(46px) translateX(-14px) rotate(-135deg);
+            }
+            .close-forecast span:nth-child(2) {
+                //transform: translateY(36px) translateX(14px) rotate(135deg);
+                transform: translateY(6px) rotate(45deg);
+            }
+
+
+@media (max-width: 1200px) {
+    .matches {
+        font-size: 14px;
+    }   
+    .point {
+            font-size: 18px;
+        }
+}
+ @media (max-width: 992px) {
+    .matches {
+        font-size: 12px;
+    }
+    .group-match {
+        padding-top: 2px;
+    }
+    .btn-matches {
+        font-size: 12px;
+    }
+    .close-forecast {
+        left: 97%;
+    }
+ }
+ @media (max-width: 768px) {
+    .matches-row {
+        justify-content: space-between;
+    }
+    .close-forecast {
+        left: 96%;
+    }
+}
+@media (max-width: 587px) {
+     .matches {
+        font-size: 12px;
+    }
+     .group-match {
+        margin-left: 5px;
+    }
+    .dpt-match {
+        font-size: 10px;
+    }
+    .btn-matches {
+        margin-left: 5px;
+    }
+    .close-forecast {
+        left: 94%;
+    }
+}

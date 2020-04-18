@@ -1,0 +1,70 @@
+ .top-move {
+     display: none;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     position: fixed;
+     background-color: rgba(102, 205, 170, 0.5);
+     top: 80%;
+     left: 80%;
+     z-index: 5;
+    }
+        .line {
+            display: block;
+            height: 10px;
+            width: 60%;
+            background-color: #fff;
+            margin: 0 auto;
+            }
+        .txt {
+            color: azure;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+    .top-move span:nth-child(1) {
+        transform: translateY(24px) translateX(-14px) rotate(-45deg);          //стрелка вверх
+    }
+    .top-move span:nth-child(2) {
+        transform: translateY(14px) translateX(14px) rotate(45deg);              //стрелка вверх
+    }
+
+@media (max-width: 992px) {
+    .top-move {
+        width: 60px;
+        height: 60px;
+    }
+        .line {
+            height: 7.5px;
+        }   
+        .txt {
+            font-size: 13px;
+        }
+        .top-move span:nth-child(1) {
+        transform: translateY(16.5px) translateX(-9px) rotate(-45deg);          //стрелка вверх
+        }
+        .top-move span:nth-child(2) {
+        transform: translateY(8.5px) translateX(11.5px) rotate(45deg);              //стрелка вниз
+        }
+ }
+@media (max-width: 587px) {
+     .top-move {
+        width: 40px;
+        height: 40px;
+    }
+        .line {
+            height: 5px;
+        }   
+        .txt {
+            font-size: 9px;
+            margin-top: 12px;
+        }
+        .top-move span:nth-child(1) {
+        transform: translateY(12px) translateX(-7px) rotate(-45deg);          //стрелка вверх
+        }
+        .top-move span:nth-child(2) {
+        transform: translateY(7px) translateX(7px) rotate(45deg);              //стрелка вниз
+        }
+}

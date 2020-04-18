@@ -1,0 +1,56 @@
+﻿.teams {
+    matgin-top: 50px;
+    font-weight: 300;
+    min-height: 600px;
+    background: url('../img/football1.jpg') center center/cover no-repeat;   
+    padding-bottom: 10px;   
+}
+    .teams img {
+        width: 24px;
+        vertical-align: middle;
+    }
+    .teams-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+        .group {
+            width: 45%;
+            margin-top: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+            .group-header {
+                display: flex;
+                border-bottom: double;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-weight: 900; 
+                color: #FFD700;
+                padding-left: 10px;
+            }
+            .team-group-row {
+                display: flex;
+                margin-top: 10px;
+                padding-left: 10px;
+                color: #FAFAD2;
+                font-weight: 700;
+            }
+                .group-team span {
+                    margin-left: 10px;
+                }
+
+@media (max-width: 992px) {
+    .group {
+        font-size: 14px;
+    }
+}
+@media (max-width: 587px) {
+    .group {
+        //font-size: 12px;
+        width: 90%;
+        margin-left: 5%;
+    }
+}

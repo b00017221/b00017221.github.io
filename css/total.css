@@ -1,0 +1,52 @@
+.total {
+    background: url('../img/football3.jpg') center center/cover no-repeat;   
+    min-height:600px;   
+    color: #FFFFFF;
+    font-size: 16px;  
+}
+    .total-header {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        background-color: rgba(34, 139, 34, 0.3);
+        margin: 0 15px;
+        border-bottom: 4px solid;
+    }
+    .total-row {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0px;
+        text-align: center;
+        background-color: rgba(34, 139, 34, 0.5);
+    }
+        .name-player {
+            text-align: left;
+        }
+ 
+@media (max-width: 1200px) {
+    .total-row {
+        font-size: 18px;
+    }       
+}
+@media (max-width: 992px) {
+    .total {
+        font-size: 13px;
+    }   
+ }
+@media (max-width: 768px) {
+    .total {
+        font-size: 12px;
+    }   
+    .total-row {
+        font-size: 16px;
+    }       
+}
+@media (max-width: 587px) {
+    .total {
+        font-size: 10px;
+    }   
+    .total-row {
+        font-size: 12px;
+    }
+}

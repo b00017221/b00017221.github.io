@@ -1,0 +1,33 @@
+.regulations {
+    background: url('../img/e2020.png') center center/cover no-repeat;   
+    //min-height:600px;   
+    color: #E0FFFF;
+    font-weight: 400;
+}
+    .regulations-list {
+        padding: 30px 0px;
+        background: rgba(47,79,79,0.5);
+    }
+        .regulations-list li {
+            margin: 5px 20px;
+        }
+
+ 
+@media (max-width: 1200px) {
+      
+}
+@media (max-width: 992px) {
+    .regulations {
+        font-size: 14px;
+    }   
+ }
+@media (max-width: 768px) {
+    .regulations {
+        font-size: 12px;
+    }      
+}
+@media (max-width: 587px) {
+    .regulations {
+        font-size: 10px;
+    }  
+}

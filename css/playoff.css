@@ -1,0 +1,190 @@
+.playoff {
+    background: url('../img/football4.jpg') center center/cover no-repeat;   
+    min-height:600px;   
+    color: #FAFAD2;
+    font-size: 16px;  
+    padding-bottom: 10px;
+}
+    .playoff .container {
+        position: relative;
+    }
+    .div-flex {
+        display: flex;            
+    }
+    .b-b {
+        border-bottom: dashed 2px;
+    }
+    .b-bl {
+         border-bottom: dashed 2px;
+         border-left: dashed 2px;
+    }
+    .b-l {
+        border-left: dashed 2px;        
+    }
+    .playoff-header {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        background-color: rgba(27, 29, 165, 0.30);
+        margin-bottom: 5px;
+    }
+    .playoff div {
+        border-color: #696969;
+    }
+    .playoff img {
+        width: 24px;
+        margin: auto 5px;
+    }
+    .playoff span {
+        position: absolute;
+    }
+    .team18 {
+        padding-left: 10px;        
+    }
+    .team14 {
+        padding-left: 10px; 
+    }
+    .team12 {
+        padding-left: 10px;
+    }
+    .team11 {
+        padding-left: 10px;
+    }
+    .team10 {
+        padding-left: 10px;
+    }
+
+    .btns-forecast {
+            height: 24px;
+            border: 2px solid;
+            border-radius: 5px;
+            line-height: 18px;
+            text-align: center;
+            margin: 20px 10px;
+        }
+        .btns-forecast:hover {
+            background-color: #F0FFFF;
+            color: rgb(47,79,79);
+            cursor: pointer;    
+        }
+        .playoff-forecast .close-forecast {
+            top: -30%;
+        }
+        .playoff-forecast .close-forecast span {
+            background-color: #F0FFFF;
+        }
+
+        .playoff-forecast .close-forecast span:nth-child(1) {
+                transform: translateY(6.5px) rotate(-45deg);
+                //transform: translateY(46px) translateX(-14px) rotate(-135deg);
+            }
+        .playoff-forecast .close-forecast span:nth-child(2) {
+            //transform: translateY(36px) translateX(14px) rotate(135deg);
+            transform: translateY(6.5px) rotate(45deg);
+        }
+
+
+
+    .playoff-forecast {
+        display: none;
+        position: absolute;
+        background-color: #F0FFFF;
+        color: #000080;
+        flex-wrap:wrap;        
+        left: 25%;
+        border: 3px solid;
+    }
+    .disp-none {
+        display: none;
+    }
+    .disp-block {
+        display: block;
+    }
+    .noborder {
+        border: none;
+    }
+        .row-forecast {
+            line-height: 100%;
+            margin: 0 auto;
+            min-height: 24px;
+            border-bottom: 1px dashed;
+            border-color: #000080;
+            
+        }
+            .point-forecast {
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                margin: auto;
+            }
+            .player-forecast {
+                margin: auto 0px;
+            }
+            .teams-forecast {
+                flex-wrap:wrap;  
+            }
+
+
+@media (max-width: 1200px) {
+    .playoff {
+        font-size: 14px;
+    }   
+    .playoff img {
+        width: 22px;
+    }
+    .point-forecast {
+        font-size: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .playoff {
+        font-size: 13px;
+    }   
+    .playoff img {
+        width: 20px;
+        height: 20px;
+    }
+    .playoff-forecast .close-forecast {
+        top: -30%;
+    }
+ }
+@media (max-width: 768px) {
+    .playoff {
+        font-size: 12px;
+    }   
+    .playoff img {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (max-width: 587px) {
+    .playoff {
+        font-size: 10px;
+    }   
+    .playoff img {
+        width: 14px;
+        height: 14px;
+    }
+    .team18 {
+        padding-left: 2px;        
+    }
+    .team14 {
+        padding-left: 2px; 
+    }
+    .team12 {
+        padding-left: 2px;
+    }
+    .team11 {
+        padding-left: 2px;
+    }
+    .team10 {
+        padding-left: 2px;
+    }
+    .point-forecast {
+        font-size: 12px;
+    }
+    .playoff-forecast .close-forecast {
+        top: -20%;
+    }
+}
