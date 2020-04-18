@@ -1,562 +1,121 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <title>TotE2020</title>
-    <link rel="shortcut icon" href="icons/cube.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <header>  
-        <nav>           
-            <div class="container">                  
-                <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#games" class="menu_link">Расписание игр</a></li>
-                    <li class="menu_item"><a href="#bonus" class="menu_link">Бонусы</a></li>
-                    <li class="menu_item"><a href="#result" class="menu_link">Результаты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Правила розыгрыша</a></li> 
-                </ul>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>        
-        </nav>
- 
-        <div class="subheader">
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="discription" content="Презентация"/>
+    <title>TotE</title>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/modal.css"/>
+    <link rel="stylesheet" href="css/regulations.css"/>
+    <link rel="stylesheet" href="css/total.css"/>
+    <link rel="stylesheet" href="css/playoff.css"/>
+    <link rel="stylesheet" href="css/matches.css"/>
+    <link rel="stylesheet" href="css/teams.css"/>
+</head>
+<body>
+    <header>
+        <nav>
             <div class="container">
-                <div class="row">
-                    <div class="col-8 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                        <div class="subheader_logo"></div>
-                    </div>
-                    <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                        <div class="subheader_text">Войти</div>
-                    </div>
-                    <div class="col-2 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                        <div class="subheader_user"></div>
-                    </div>
-                </div>
-            </div>         
-        </div>
-        
+                <ul class="menu menu-active">
+                    <li class="menu-item"><a class="menu-link" href="#groups">Группы</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#matches">Матчи</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#playoff">Плей-офф</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#total">Результаты</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#regulation">Правила</a></li>                
+                </ul>                
+            </div>
+            <div class="humburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav> 
     </header>
- <section class="all_groups">
-     <div class="container">
-        <div class="all_groups_mt"></div>
-        <div class="row">            
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-a-bgc mb-3 ">
-                    <div class="card-header">Группа А</div>                
-                    <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/TUR.png" alt="tur" class="flag">
-                                <span>Турция</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/ITA.png" alt="ita" class="flag">
-                                <span>Италия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/WAL.png" alt="tur" class="flag">
-                                <span>Уэльс</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/SUI.png" alt="tur" class="flag">
-                                <span>Италия</span>
-                            </li>
-                        </ul>
-                    </div>
-                 </div>
-             </div>            
-
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-b-bgc mb-3 "> 
-                     <div class="card-header">Группа B</div>                
-                     <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/DEN.png" alt="tur" class="flag">
-                                <span>Дания</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/FIN.png" alt="tur" class="flag">
-                                <span>Финляндия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/BEL.png" alt="tur" class="flag">
-                                <span>Бельгия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/RUS.png" alt="tur" class="flag">
-                                <span>Россия</span>
-                            </li>
-                         </ul>                    
-                     </div>
-                 </div>    
-             </div>                
-
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-c-bgc mb-3 ">          
-                    <div class="card-header">Группа C</div>                
-                    <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/NED.png" alt="tur" class="flag">
-                                <span>Нидерланды</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/UKR.png" alt="tur" class="flag">
-                                <span>Украина</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/AUT.png" alt="tur" class="flag">
-                                <span>Австрия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/none.png" alt="tur" class="flag">
-                                <span>Победитель D(A) </span>
-                            </li>
-                        </ul>
-                    </div>    
-                </div>
-             </div>            
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-d-bgc mb-3 ">
-                    <div class="card-header">Группа D</div>                
-                    <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/none.png" alt="tur" class="flag">
-                                <span>Победитель С</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/ENG.png" alt="tur" class="flag">
-                                <span>Англия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/CZE.png" alt="tur" class="flag">
-                                <span>Чехия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/CRO.png" alt="tur" class="flag">
-                                <span>Хорватия</span>
-                            </li>
-                        </ul>
-                    </div>
-                 </div>
-             </div>            
+    <section class="teams" id="groups">
+        <div class="container">
+            <div class="teams-row">                
+            </div>
+        </div>
+    </section>
+    <section class="heading-h2" id="matches">
+        <h2>Матчи</h2>
+    </section>
+    <section class="matches">
+        <div class="container">           
+            
+        </div>
+    </section>
+    <section class="heading-h2" id="playoff">
+        <h2>Плей-офф</h2>
+    </section>
+    <section class="playoff">
+        <div class="container">
+            <div class="playoff-header div-flex">
+                <div class="col-3">1/8 финала</div>
+                <div class="col-3">1/4 финала</div>
+                <div class="col-3">1/2 финала</div>
+                <div class="col-3">Финал</div>
+            </div>           
+            <div class="playoff-btns div-flex">
+                <div class="btn18 btns-forecast col-3">Прогноз</div>
+                <div class="btn14 btns-forecast col-3">Прогноз</div>
+                <div class="btn12 btns-forecast col-3">Прогноз</div>
+                <div class="btn11 btns-forecast col-3">Прогноз</div>
+            </div>
+            <div class="playoff-forecast col-9">
+                <div class="forecast18 col-12 disp-none"></div>
+                <div class="forecast14 col-12 disp-none"></div>
+                <div class="forecast12 col-12 disp-none"></div>
+                <div class="forecast10 col-12 disp-none"></div>
+                             
+            </div>
+        </div>
+    </section> 
+        <section class="heading-h2" id="total">
+        <h2>Результаты</h2>
+    </section>
+    <section class="total">
+        <div class="container">
+            <div class="total-header div-flex">
+                <div class="col-7"></div>
+                <div class="col">УИ</div>
+                <div class="col">УР</div>
+                <div class="col">Очки</div>
+                <div class="col">Бонус</div>
+                <div class="col">Итого</div>
+            </div>
+        </div>
+    </section>
+    <section class="heading-h2" id="regulation">
+        <h2>Правила игры</h2>
+    </section>
+    <section class="regulations">
+        <div class="container">
+            <ul class="regulations-list">
+                <li>прогнозы матчей, участников 1/8, 1/4, 1/2 финала, чемпион ЧЕ2020 заносятся в карточку УЧАСТНИКА РОЗЫГРЫША;</li>
+                <li>прогноз на матч отсылается в элетронном виде ответственному за ведение основной таблицы сайта не менее чем за час до начала трансляции матча;</li>
+                <li>прогнозы участников 1/8, 1/4, 1/2 финала,  чемпиона ЧE отсылаются ответственному до 12/06/2020;</li>
+                <li>за угаданный результат матча начисляется 15 баллов;</li>
+                <li>за угаданный исход матча начисляется 10 баллов минус количество баллов за неверно угаданное количество забитых и пропущенных мячей относительно результата матча;</li>
+                <li>за каждого угаданного участника 1/8, 1/4, 1/2 финала начисляется соответственно 5, 10, 15 баллов;</li>
+                <li>за правильно угаданного чемпиона начисляется 30 баллов;</li>
+                <li>Победитель и призеры в игре определяются по количеству набранных баллов. </li>
+            </ul>
+        </div>
+    </section>
+    <div class="top-move">
+        <span class="line"></span>
+        <span class="line"></span>
+        <div class="txt">вверх</div>
+    </div>
  
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-e-bgc mb-3 "> 
-                     <div class="card-header">Группа E</div>                
-                     <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/none.png" alt="tur" class="flag">
-                                <span>Победитель В</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/SWE.png" alt="tur" class="flag">
-                                <span>Швеция</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/ESP.png" alt="tur" class="flag">
-                                <span>Испания</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/POL.png" alt="tur" class="flag">
-                                <span>Польша</span>
-                            </li>
-                         </ul>                    
-                     </div>
-                 </div>    
-             </div>                
- 
-             <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                <div class="card group-f-bgc mb-3 ">          
-                    <div class="card-header">Группа F</div>                
-                    <div class="card-body">
-                        <ul class="card_list">
-                            <li class="group-lst">
-                                <img src="icons/none.png" alt="tur" class="flag">
-                                <span>Победитель A(D)</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/POR.png" alt="tur" class="flag">
-                                <span>Португалия</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/FRA.png" alt="tur" class="flag">
-                                <span>Франция</span>
-                            </li>
-                            <li class="group-lst">
-                                <img src="icons/GER.png" alt="tur" class="flag">
-                                <span>Германия </span>
-                            </li>
-                        </ul>
-                    </div>    
-                </div>
-             </div>            
-        </div>  
-     </div>
- </section>
-
- <section class="header-2"id="games">
-     <div class="container">
-        <div class="head-h2">
-            <h2>ГРУППОВОЙ ЭТАП</h2>
-        </div>
-     </div>
- </section>
-
- <section class="games" >     
-     <div class="container">
-
-     </div>
- </section>
-
- <section class="header-2" id="bonus">
-     <div class="container">
-         <div class="head-h2">
-             <h2>Бонусы</h2>
-         </div>
-     </div>
- </section>
-
- <section class="bonus">
-     <div class="container">
-         <div class="row head-bonus">
-             <div class="final8 col-3">1/8 финала</div>
-             <div class="final14 col-3">1/4 финала</div>
-             <div class="final12 col-3">1/2 финала</div>
-             <div class="final14 col-3">Финал</div>
-        </div>        
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/SUI.png" alt="sui">
-                <span>Швейцария</span> 
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 41</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 41 </span>
-            </div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>2B</span> 
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final12">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3">Match 46</div>
-            <div class="team12 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 46 </span>
-            </div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1A</span>
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 42</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 42 </span>
-            </div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>2C</span>
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3">Match 49</div>
-            <div class="team11 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 49 </span>
-            </div>
-        </div>
-
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1C</span> 
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 39</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 39 </span>
-            </div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>3D/E/F</span> 
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final12">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3">Match 45</div>
-            <div class="team12 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 45 </span>
-            </div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1B</span>
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 37</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 37 </span>
-            </div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>3A/D/E/F</span>
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="team10 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner EURO 2020</span>
-            </div>
-        </div>
-
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>2D</span> 
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 40</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 40 </span>
-            </div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>2E</span> 
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final12">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3">Match 48</div>
-            <div class="team12 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 48 </span>
-            </div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1F</span>
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 38</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 38 </span>
-            </div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>3A/B/C</span>
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3">Match 50</div>
-            <div class="team11 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 50 </span>
-            </div>
-        </div>
-
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1D</span> 
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 43</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 43 </span>
-            </div>
-            <div class="none3 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>2F</span> 
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final12">
-            <div class="none1 col-3"></div>
-            <div class="none2 col-3">Match 47</div>
-            <div class="team12 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 47 </span>
-            </div>
-            <div class="none44 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>1E</span>
-            </div>
-            <div class="none2 col-3"></div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final14">
-            <div class="none1 col-3">Match 44</div>
-            <div class="team14 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>Winner Match 44 </span>
-            </div>
-            <div class="none33 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-        <div class="row final18">
-            <div class="team18 col-3">
-                <img class='flag' src="icons/none.png" alt="none">
-                <span>3A/B/C/D</span>
-            </div>
-            <div class="none22 col-3"></div>
-            <div class="none3 col-3"></div>
-            <div class="none4 col-3"></div>
-        </div>
-       
-
-     </div>
- </section>
-
- <section class="header-2" id="result">
-     <div class="container">
-         <div class="head-h2">
-             <h2>Результаты розыгрыша</h2>
-         </div>
-     </div>
- </section>
-
- <section class="players">
-    <div class="container">             
-        <div class="row players_head">
-            <div class="col-7"></div>
-            <div class="col-1">УИ</div>
-            <div class="col-1">УР</div>
-            <div class="col-1">БН</div>
-            <div class="col-2">Итог</div>            
-         </div>
-         <div class="row player1">
-            <div class="col-7">Игрок-1</div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-2"></div>            
-         </div>
-        
-        
-     </div>
- </section>
-  <script src="js/addElement.js"></script>
-  <script src="js/script.js"></script> 
- 
-  </body>
+    <script src="js/funcjs.js"></script>
+    <script src="js/script.js"></script>
+    
+    
+</body>
 </html>
