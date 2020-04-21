@@ -1,7 +1,7 @@
 ﻿{
 "group-a1":{
 	"name":"Турция",
-        "icon":"icons/tur.png",
+        "icon":"icons/TUR.png",
         "f18":"0",
         "f14":"",
         "f12":"",
@@ -14,7 +14,7 @@
 	},
 "group-a2":{
         "name":"Уэльс",
-        "icon":"icons/wal.png",
+        "icon":"icons/WAL.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -27,7 +27,7 @@
 	},
 "group-a3":{
         "name":"Швейцария",
-        "icon":"icons/sui.png",
+        "icon":"icons/SUI.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -40,7 +40,7 @@
 	},
 "group-a4":{
         "name":"Италия",
-        "icon":"icons/ita.png",
+        "icon":"icons/ITA.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -53,7 +53,7 @@
 	},
 "group-b5":{
         "name":"Дания",
-        "icon":"icons/den.png",
+        "icon":"icons/DEN.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -66,7 +66,7 @@
 	},
 "group-b6":{
         "name":"Россия",
-        "icon":"icons/rus.png",
+        "icon":"icons/RUS.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -79,7 +79,7 @@
 	},
 "group-b7":{
         "name":"Бельгия",
-        "icon":"icons/bel.png",
+        "icon":"icons/BEL.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -92,7 +92,7 @@
 	},
 "group-b8":{
         "name":"Финляндия",
-        "icon":"icons/fin.png",
+        "icon":"icons/FIN.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -118,7 +118,7 @@
 	},
 "group-c10":{
         "name":"Украина",
-        "icon":"icons/ukr.png",
+        "icon":"icons/UKR.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -131,7 +131,7 @@
 	},
 "group-c11":{
         "name":"Австрия",
-        "icon":"icons/aut.png",
+        "icon":"icons/AUT.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -144,7 +144,7 @@
 	},
 "group-c12":{
         "name":"Нидерланды",
-        "icon":"icons/ned.png",
+        "icon":"icons/NED.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -170,7 +170,7 @@
 	},
 "group-c14":{
         "name":"Англия",
-        "icon":"icons/eng.png",
+        "icon":"icons/ENG.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -183,7 +183,7 @@
 	},
 "group-c15":{
         "name":"Чехия",
-        "icon":"icons/cze.png",
+        "icon":"icons/CZE.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -196,7 +196,7 @@
 	},
 "group-c16":{
         "name":"Хорватия",
-        "icon":"icons/cro.png",
+        "icon":"icons/CRO.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -222,7 +222,7 @@
 	},
 "group-e18":{
         "name":"Швеция",
-        "icon":"icons/swe.png",
+        "icon":"icons/SWE.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -235,7 +235,7 @@
 	},
 "group-e19":{
         "name":"Испания",
-        "icon":"icons/esp.png",
+        "icon":"icons/ESP.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -248,7 +248,7 @@
 	},
 "group-e20":{
         "name":"Польша",
-        "icon":"icons/pol.png",
+        "icon":"icons/POL.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -274,7 +274,7 @@
 	},
 "group-f22":{
         "name":"Португалия",
-        "icon":"icons/por.png",
+        "icon":"icons/POR.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -287,7 +287,7 @@
 	},
 "group-f23":{
         "name":"Франция",
-        "icon":"icons/fra.png",
+        "icon":"icons/FRA.png",
         "f18":"",
         "f14":"",
         "f12":"",
@@ -300,7 +300,7 @@
 	},
 "group-f24":{
         "name":"Германия",
-        "icon":"icons/ger.png",
+        "icon":"icons/GER.png",
         "f18":"",
         "f14":"",
         "f12":"",
